@@ -1,0 +1,57 @@
+$button-size: 3em;
+$button-after-size: 1em;
+
+.carousel {
+  position: relative;
+  height: 100%;
+
+  &__button {
+    position: absolute;
+    top: calc(50% - (#{$button-size} / 2));
+    width: $button-size;
+    height: $button-size;
+    border-radius: $button-size / 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - (#{$button-after-size} / 2));
+      width: $button-after-size;
+      height: $button-after-size;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      border-top-right-radius: 3px;
+    }
+
+    &:hover {
+      background-color: rgba($color: black, $alpha: 0.2);
+    }
+
+    &--previous {
+      left: 1em;
+
+      &::after {
+        left: calc(50% - (#{$button-after-size} / 4));
+        transform: rotate(225deg);
+      }
+    }
+    &--next {
+      right: 1em;
+
+      &::after {
+        right: calc(50% - (#{$button-after-size} / 4));
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__slides {
+    height: 100%;
+    display: flex;
+    & > div {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
