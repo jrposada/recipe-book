@@ -19,31 +19,31 @@ function Home() {
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe C',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe D',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe E',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe F',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe G',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe H',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
     {
-      title: 'Recipe B',
+      title: 'Recipe I',
       description: 'This is an awesome recipe repice for a sunday lunch.',
     },
   ]

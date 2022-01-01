@@ -4,6 +4,7 @@ $button-after-size: 1em;
 .carousel {
   position: relative;
   height: 100%;
+  overflow: hidden;
 
   &__button {
     position: absolute;
@@ -48,6 +49,9 @@ $button-after-size: 1em;
   &__slides {
     height: 100%;
     display: flex;
+
+    transition: 250ms all ease-out;
+
     & > div {
       flex: 0 0 auto;
       width: 100%;
