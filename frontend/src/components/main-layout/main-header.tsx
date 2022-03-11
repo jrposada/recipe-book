@@ -55,6 +55,11 @@ function MainHeader({ t, i18n }: MainHeaderProps) {
                 <Button type="text">{t('page.user')}</Button>
               </NavLink>
             </li>
+            <li>
+              <NavLink exact to="/create-recipe">
+                <Button type="text">{t('page.create-recipe')}</Button>
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
