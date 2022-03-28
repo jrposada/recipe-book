@@ -1,16 +1,10 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import { ReactElement } from 'react'
+import AppLayout from 'app-layout/AppLayout'
 
-import MainLayout from 'components/main-layout/main-layout'
+import './App.scss'
 
-import 'antd/dist/antd.css'
-import './app.scss'
-
-function App() {
-  return (
-    <Router>
-      <MainLayout />
-    </Router>
-  )
+function App(): ReactElement {
+  return <AppLayout />
 }
 
 export default App

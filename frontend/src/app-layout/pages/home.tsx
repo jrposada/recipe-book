@@ -12,39 +12,39 @@ function Home() {
   const recipes = [
     {
       title: 'Recipe A',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe B',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe C',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe D',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe E',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe F',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe G',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe H',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
     {
       title: 'Recipe I',
-      description: 'This is an awesome recipe repice for a sunday lunch.',
+      description: 'This is an awesome recipe recipe for a sunday lunch.',
     },
   ]
 
@@ -52,21 +52,21 @@ function Home() {
     <div className="home">
       <div className="home__highlights">
         <Carousel>
-          {recipes.map((recipe) => (
-            <RecipeHighlight title={recipe.title} />
+          {recipes.map((recipe, index) => (
+            <RecipeHighlight key={index} title={recipe.title} />
           ))}
         </Carousel>
       </div>
       <div className="home__section-title">{t('top-recipes')}</div>
       <div className="home__section-recipes">
-        {recipes.map((recipe) => (
-          <RecipeCard info={recipe} />
+        {recipes.map((recipe, index) => (
+          <RecipeCard key={index} info={recipe} />
         ))}
       </div>
       <div className="home__section-title">{t('last-recipes')}</div>
       <div className="home__section-recipes">
-        {recipes.map((recipe) => (
-          <RecipeCard info={recipe} />
+        {recipes.map((recipe, index) => (
+          <RecipeCard key={index} info={recipe} />
         ))}
       </div>
     </div>

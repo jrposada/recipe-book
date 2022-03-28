@@ -1,4 +1,3 @@
-import useResize from 'hooks/useResize'
 import {
   Children,
   createRef,
@@ -7,10 +6,13 @@ import {
   useEffect,
   useState,
 } from 'react'
+import useResize from 'uiLib/useResize'
 
 import './carousel.scss'
 
-function Carousel({ children }: PropsWithChildren<{}>) {
+interface CarouselProps {}
+
+function Carousel({ children }: PropsWithChildren<CarouselProps>) {
   const containerRef = createRef<HTMLDivElement>()
   const [width, setWidth] = useState(0)
   const [index, setIndex] = useState(0)
@@ -55,3 +57,4 @@ function Carousel({ children }: PropsWithChildren<{}>) {
 }
 
 export default Carousel
+export type { CarouselProps }

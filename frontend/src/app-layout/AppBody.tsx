@@ -1,14 +1,14 @@
 import { Route, Switch } from 'react-router-dom'
 
-import Home from 'pages/home'
-import Recipes from 'pages/recipes'
-import User from 'pages/user'
+import Home from './pages/home'
+import Recipes from './pages/recipes'
+import User from './pages/user'
 
-import './main-body.scss'
+import './AppBody.scss'
 
-function MainBody() {
+function AppBody() {
   return (
-    <div className="main-body">
+    <div className="app-body">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/recipes" component={Recipes} />
@@ -18,4 +18,4 @@ function MainBody() {
   )
 }
 
-export default MainBody
+export default AppBody

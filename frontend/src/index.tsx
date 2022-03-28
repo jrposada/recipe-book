@@ -3,14 +3,19 @@ import ReactDOM from 'react-dom'
 
 import './i18n'
 
-import App from './app'
+import App from './App'
 import reportWebVitals from './reportWebVitals'
 
+import 'antd/dist/antd.css'
 import './index.scss'
+
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 
   document.getElementById('root')
