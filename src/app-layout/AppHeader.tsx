@@ -39,22 +39,22 @@ function AppHeader() {
         <nav>
           <ul>
             <li>
-              <NavLink exact to="/">
+              <NavLink to="/">
                 <Button type="text">{t('page.home')}</Button>
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/recipes">
+              <NavLink to="/recipes">
                 <Button type="text">{t('page.recipes')}</Button>
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/user">
+              <NavLink to="/user">
                 <Button type="text">{t('page.user')}</Button>
               </NavLink>
             </li>
             <li>
-              <NavLink exact to="/create-recipe">
+              <NavLink to="/create-recipe">
                 <Button type="text">{t('page.create-recipe')}</Button>
               </NavLink>
             </li>
