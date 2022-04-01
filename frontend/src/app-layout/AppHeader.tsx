@@ -1,20 +1,18 @@
+import { Button, Dropdown, Input, Menu } from 'antd'
+import { Icon } from '@iconify/react'
+import { NavLink } from 'react-router-dom'
 import { useCallback, useMemo } from 'react'
-
 import spainFlag from '@iconify/icons-emojione-v1/flag-for-spain'
 import unitedStatesFlag from '@iconify/icons-emojione-v1/flag-for-united-states'
-import { Icon } from '@iconify/react'
 
-import { WithTranslation, withTranslation } from 'react-i18next'
-
-import { Menu, Dropdown, Input, Button } from 'antd'
-
-import './main-header.scss'
-import { NavLink } from 'react-router-dom'
+import './AppHeader.scss'
+import { useTranslation } from 'react-i18next'
 
 const ICON_SIZE = '1.5em'
 
-interface MainHeaderProps extends WithTranslation {}
-function MainHeader({ t, i18n }: MainHeaderProps) {
+function AppHeader() {
+  const { t, i18n } = useTranslation()
+
   const changeLanguage = useCallback(
     (lang) => () => {
       i18n.changeLanguage(lang)
@@ -36,8 +34,8 @@ function MainHeader({ t, i18n }: MainHeaderProps) {
   }, [i18n.language])
 
   return (
-    <div className="main-header">
-      <div className="main-header__left">
+    <div className="app-header">
+      <div className="app-header__left">
         <nav>
           <ul>
             <li>
@@ -64,7 +62,7 @@ function MainHeader({ t, i18n }: MainHeaderProps) {
         </nav>
       </div>
 
-      <div className="main-header__center">
+      <div className="app-header__center">
         <Input.Search
           placeholder={t('general.search')}
           onSearch={handleSearch}
@@ -72,7 +70,7 @@ function MainHeader({ t, i18n }: MainHeaderProps) {
         />
       </div>
 
-      <div className="main-header__right">
+      <div className="app-header__right">
         <Dropdown
           placement="bottomRight"
           overlay={
@@ -109,28 +107,4 @@ function MainHeader({ t, i18n }: MainHeaderProps) {
   )
 }
 
-/* <nav>
-<ul>
-  <li>
-    <NavLink exact to="/">
-      {t('home-page')}
-    </NavLink>
-  </li>
-  <li>
-    <NavLink exact to="/recipes">
-      {t('recipes-page')}
-    </NavLink>
-  </li>
-  <li>
-    <NavLink exact to="/user">
-      {t('user-page')}
-    </NavLink>
-  </li>
-  <li>
-    <SearchBar />
-  </li>
-</ul>
-</nav> */
-
-export default withTranslation()(MainHeader)
-export type { MainHeaderProps }
+export default AppHeader

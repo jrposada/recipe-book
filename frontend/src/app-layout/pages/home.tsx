@@ -52,21 +52,21 @@ function Home() {
     <div className="home">
       <div className="home__highlights">
         <Carousel>
-          {recipes.map((recipe) => (
-            <RecipeHighlight title={recipe.title} />
+          {recipes.map((recipe, index) => (
+            <RecipeHighlight key={index} title={recipe.title} />
           ))}
         </Carousel>
       </div>
       <div className="home__section-title">{t('top-recipes')}</div>
       <div className="home__section-recipes">
-        {recipes.map((recipe) => (
-          <RecipeCard info={recipe} />
+        {recipes.map((recipe, index) => (
+          <RecipeCard key={index} info={recipe} />
         ))}
       </div>
       <div className="home__section-title">{t('last-recipes')}</div>
       <div className="home__section-recipes">
-        {recipes.map((recipe) => (
-          <RecipeCard info={recipe} />
+        {recipes.map((recipe, index) => (
+          <RecipeCard key={index} info={recipe} />
         ))}
       </div>
     </div>

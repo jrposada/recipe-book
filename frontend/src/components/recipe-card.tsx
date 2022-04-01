@@ -1,4 +1,10 @@
-function RecipeCard({ info }) {
+import { ReactElement } from 'react'
+
+interface RecipeCardProps {
+  info: { title: string; description: string }
+}
+
+function RecipeCard({ info }: RecipeCardProps): ReactElement {
   return (
     <div className="recipe-card">
       <div className="recipe-card__title">{info.title}</div>

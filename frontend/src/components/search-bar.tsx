@@ -1,4 +1,4 @@
-function SearchBar() {
+function SearchBar(): null {
   return null
 }
 

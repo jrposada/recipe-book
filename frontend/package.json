@@ -1,6 +1,18 @@
 {
   "name": "recipe-book",
   "version": "0.0.1",
+  "author": "Javier Rodriguez Posada",
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts src/",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -10,9 +22,16 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "@types/lodash":"^4.14.178",
+    "@types/lodash": "^4.14.178",
+    "@types/react": "^17.0.31",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-router-dom": "^5.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
     "@types/uuid": "8.3.3",
     "antd": "^4.16.13",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react": "^7.29.4",
     "i18next": "^21.3.3",
     "i18next-browser-languagedetector": "6.1.2",
     "node-sass": "^6.0.1",
@@ -25,23 +44,6 @@
     "typescript": "^4.4.4",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "author": "Javier Rodriguez Posada",
-  "keywords": [
-    "react",
-    "javascript"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -56,8 +58,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^17.0.31",
-    "@types/react-dom": "^17.0.10",
-    "@types/react-router-dom": "^5.3.1"
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0"
   }
 }

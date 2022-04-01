@@ -1,9 +1,9 @@
-import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Form, Input } from 'antd'
-import { v4 as uuidV4 } from 'uuid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { MouseEventHandler, useCallback, useState } from 'react'
 import { WithTranslation, withTranslation } from 'react-i18next'
+import { faPlus, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { v4 as uuidV4 } from 'uuid'
 import CreateRecipeIngredient, {
   CreateRecipeIngredientInfo,
 } from './create-recipe-ingredient'

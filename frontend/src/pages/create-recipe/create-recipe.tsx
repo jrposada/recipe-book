@@ -1,8 +1,8 @@
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Form, Input } from 'antd'
-import { useCallback, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { WithTranslation, withTranslation } from 'react-i18next'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { useCallback, useState } from 'react'
 import { v4 as uuidV4 } from 'uuid'
 import CreateRecipeStep, { CreateRecipeStepInfo } from './create-recipe-step'
 
