@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RecipeBook.Repository\RecipeBook.Repository.csproj" />
   </ItemGroup>
 

@@ -1,8 +1,8 @@
-﻿using RecipeBook.Repository.Models;
-using System.Collections.Generic;
-
-namespace RecipeBook.Business.Definitions
+﻿namespace RecipeBook.Business.Definitions
 {
+    using RecipeBook.Repository.Models;
+    using System.Collections.Generic;
+
     public interface IRecipesService
     {
         IEnumerable<Recipe> GetRecipes();
