@@ -1,0 +1,23 @@
+.create-recipe {
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & .ant-btn.create-recipe__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__form-item-button {
+    & .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--right .ant-form-item-control-input-content {
+      justify-content: right;
+    }
+  }
+}

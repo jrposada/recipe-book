@@ -1,0 +1,8 @@
+.create-recipe-ingredient {
+  display: flex;
+  gap: 5px;
+
+  & .ant-row.ant-form-item {
+    flex-grow: 1;
+  }
+}

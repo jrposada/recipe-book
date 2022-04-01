@@ -1,3 +1,10 @@
 {
-  "translations": {}
+  "translation": {
+    "create-recipe.add-step": "Step",
+    "create-recipe.recipe-name": "Name",
+    "create-recipe.submit": "Create",
+    "general.description": "Description",
+    "general.ingredients": "Ingredients",
+    "page.home": "Home"
+  }
 }

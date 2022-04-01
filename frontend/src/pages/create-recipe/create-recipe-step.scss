@@ -1,0 +1,22 @@
+.create-recipe-step {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  border-top: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__ingredients {
+    display: flex;
+    justify-content: space-between;
+  }
+}
