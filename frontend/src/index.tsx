@@ -8,8 +8,6 @@ import reportWebVitals from './reportWebVitals'
 
 import 'antd/dist/antd.css'
 
-import './index.scss'
-
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
