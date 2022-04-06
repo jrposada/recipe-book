@@ -1,8 +1,9 @@
 import { useTranslation } from 'react-i18next'
+import AppBody from 'app-layout/app-body'
 
-import Carousel from 'components/carousel'
-import RecipeCard from 'components/recipe-card'
-import RecipeHighlight from 'components/recipe-highlight'
+import Carousel from 'ui/carousel'
+import RecipeCard from 'ui/recipe-card'
+import RecipeHighlight from 'ui/recipe-highlight'
 
 import './home.scss'
 
@@ -49,7 +50,7 @@ function Home() {
   ]
 
   return (
-    <div className="home">
+    <AppBody className="home">
       <div className="home__highlights">
         <Carousel>
           {recipes.map((recipe, index) => (
@@ -69,7 +70,7 @@ function Home() {
           <RecipeCard key={index} info={recipe} />
         ))}
       </div>
-    </div>
+    </AppBody>
   )
 }
 

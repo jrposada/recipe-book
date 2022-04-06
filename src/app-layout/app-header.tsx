@@ -34,7 +34,7 @@ function AppHeader() {
   }, [i18n.language])
 
   return (
-    <div className="app-header">
+    <div className="app-layout__header app-header">
       <div className="app-header__left">
         <nav>
           <ul>

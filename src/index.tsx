@@ -1,14 +1,13 @@
+import { BrowserRouter } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './i18n'
 
-import App from './App'
+import App from './app'
 import reportWebVitals from './reportWebVitals'
 
 import 'antd/dist/antd.css'
-
-import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
