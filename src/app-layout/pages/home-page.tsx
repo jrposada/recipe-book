@@ -5,7 +5,7 @@ import Carousel from 'ui/carousel'
 import RecipeCard from 'ui/recipe-card'
 import RecipeHighlight from 'ui/recipe-highlight'
 
-import './home.scss'
+import './home-page.scss'
 
 function Home() {
   const { t } = useTranslation()
