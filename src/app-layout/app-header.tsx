@@ -5,7 +5,7 @@ import { useCallback, useMemo } from 'react'
 import spainFlag from '@iconify/icons-emojione-v1/flag-for-spain'
 import unitedStatesFlag from '@iconify/icons-emojione-v1/flag-for-united-states'
 
-import './AppHeader.scss'
+import './app-header.scss'
 import { useTranslation } from 'react-i18next'
 
 const ICON_SIZE = '1.5em'
@@ -14,7 +14,7 @@ function AppHeader() {
   const { t, i18n } = useTranslation()
 
   const changeLanguage = useCallback(
-    (lang) => () => {
+    (lang: string) => () => {
       i18n.changeLanguage(lang)
     },
     [i18n]
@@ -64,7 +64,7 @@ function AppHeader() {
 
       <div className="app-header__center">
         <Input.Search
-          placeholder={t('general.search')}
+          placeholder={t('general.search')!}
           onSearch={handleSearch}
           enterButton
         />
