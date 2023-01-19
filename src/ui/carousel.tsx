@@ -6,7 +6,7 @@ import {
   useEffect,
   useState,
 } from 'react'
-import useResize from 'ui-lib/useResize'
+import useResize from 'ui-lib/use-resize'
 
 import './carousel.scss'
 

@@ -22,6 +22,7 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
+    '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-empty-interface': 0,
     'sort-imports-es6-autofix/sort-imports-es6': [
       2,

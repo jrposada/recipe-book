@@ -33,12 +33,11 @@ function CreateRecipeStep({
     onRemove(id)
   }, [id, onRemove])
 
-  const addIngredient: MouseEventHandler<HTMLButtonElement> =
-    useCallback(() => {
-      const nextStepInfo = { ...stepInfo }
-      nextStepInfo.ingredients[uuidV4()] = {}
-      setStepInfo(nextStepInfo)
-    }, [stepInfo])
+  const addIngredient = useCallback(() => {
+    const nextStepInfo = { ...stepInfo }
+    nextStepInfo.ingredients[uuidV4()] = {}
+    setStepInfo(nextStepInfo)
+  }, [stepInfo])
 
   const removeIngredient: (id: string) => void = useCallback(
     (id) => {

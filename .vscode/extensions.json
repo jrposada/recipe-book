@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "shadowtime2000.eta-vscode",
+    "lokalise.i18n-ally"
+  ]
+}

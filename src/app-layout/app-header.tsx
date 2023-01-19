@@ -14,7 +14,7 @@ function AppHeader() {
   const { t, i18n } = useTranslation()
 
   const changeLanguage = useCallback(
-    (lang) => () => {
+    (lang: string) => () => {
       i18n.changeLanguage(lang)
     },
     [i18n]
@@ -64,7 +64,7 @@ function AppHeader() {
 
       <div className="app-header__center">
         <Input.Search
-          placeholder={t('general.search')}
+          placeholder={t('general.search')!}
           onSearch={handleSearch}
           enterButton
         />
